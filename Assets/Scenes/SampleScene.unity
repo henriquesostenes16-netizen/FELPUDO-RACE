@@ -1,0 +1,592 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 10
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 34
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &619394800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 619394802}
+  - component: {fileID: 619394801}
+  m_Layer: 0
+  m_Name: Global Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &619394801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619394800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 3
+  m_LightType: 4
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 0
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+--- !u!4 &619394802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619394800}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &883698566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 883698568}
+  - component: {fileID: 883698567}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &883698567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883698566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e1d3351518526342858261acbb6b1ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frutasParaVencer: 15
+  velocidadeMundo: 5
+  alturaChao: -4
+  tamanhoCamera: 5
+  escalaFundo: 1
+  deslocYFundo: 0
+  alturaCarro: 2
+  gravidade: 40
+  forcaPulo: 8
+  vidasMax: 3
+  intervaloTiro: 0.4
+  velocidadeTiro: 14
+  fundoCeu: {fileID: -944691929392301131, guid: 35225d166c78d2448b3a4b4d84d405ce, type: 3}
+  fundoNuvens1: {fileID: 3627312239287146487, guid: e1831bb10d8d5a6419fe8ef1b8a9bb1d, type: 3}
+  fundoNuvens2: {fileID: 9057028362156166338, guid: 0754b89c66b41b7459e133a57f51a5b0, type: 3}
+  fundoNevoa: {fileID: -1216365631051063438, guid: 401f23d76d8f0564197ab1468621fd2f, type: 3}
+  fundoPredios: {fileID: -3569238424445286172, guid: a8c203e3eda6a1e4fa05c9a8d3d588df, type: 3}
+  fundoCasasFundo: {fileID: 7685993392480705255, guid: 4fc296f2331e6dd419ed53999020172b, type: 3}
+  fundoCasasFrente: {fileID: -8596556716902236397, guid: 238112204c168e247821223a2b017485, type: 3}
+  fundoMuro: {fileID: 7636760494941736977, guid: 170b7f9810d185241ba3f31a721c3351, type: 3}
+  fundoChao: {fileID: 8725923122541926675, guid: 89c4b07b0643f9f4f8ecfcb03f36596e, type: 3}
+  carroCorrendo:
+  - {fileID: 21300000, guid: b7590c0f34dca2044a1d66d365e44dce, type: 3}
+  - {fileID: 21300000, guid: 9260f76ba2a25a241a5b8c1957a1e286, type: 3}
+  - {fileID: 21300000, guid: 11df446e9e7bb5c4393ebe273191a627, type: 3}
+  - {fileID: 21300000, guid: 591aac4625baaa045b9a7e2b05eb4857, type: 3}
+  - {fileID: 21300000, guid: 412df0cf341d7904cb73d90228024618, type: 3}
+  - {fileID: 21300000, guid: 83628ccc6ef766d4db415d36c450ddf7, type: 3}
+  - {fileID: 21300000, guid: 550f6d5b3e691b3469f5bc92e66eb6c0, type: 3}
+  carroPulando:
+  - {fileID: 21300000, guid: 11189d755dcb7bc49a77c4873cbdad07, type: 3}
+  - {fileID: -470817268345763246, guid: 76f68387ad6c1d746b9bca83d0fdc901, type: 3}
+  - {fileID: -8648349625182535358, guid: 2ab6a24d758ca064ab9e8924e8b1ae2a, type: 3}
+  - {fileID: 8003522520036572392, guid: f67c632f00a7fd6459dd339350179b09, type: 3}
+  - {fileID: -8111038814967967569, guid: 0049999abd15eae4f87b97ef90e79cb7, type: 3}
+  carroCaindo:
+  - {fileID: 21300000, guid: 140b16c171b57f94a8276bc5d408e523, type: 3}
+  - {fileID: 21300000, guid: 159e3deafb0a9ae46a931a92b2321e5f, type: 3}
+  - {fileID: 21300000, guid: ea2b7356e9768794ca4e36de5a050b99, type: 3}
+  - {fileID: 21300000, guid: 84c84e67031eada458d2503f33d11ff4, type: 3}
+  - {fileID: 21300000, guid: 78d893fda0eac6544a335aa944c72e72, type: 3}
+  - {fileID: 8746675893624613594, guid: 140b16c171b57f94a8276bc5d408e523, type: 3}
+  - {fileID: -7654693340847117485, guid: 159e3deafb0a9ae46a931a92b2321e5f, type: 3}
+  - {fileID: -7559240516778407062, guid: ea2b7356e9768794ca4e36de5a050b99, type: 3}
+  - {fileID: 2116824826735660952, guid: 84c84e67031eada458d2503f33d11ff4, type: 3}
+  - {fileID: -2898995960973174485, guid: 78d893fda0eac6544a335aa944c72e72, type: 3}
+  carroAbaixando:
+  - {fileID: 21300000, guid: 5051e10a61524eb4387bea2bbb47b1af, type: 3}
+  - {fileID: 21300000, guid: a234a0c3266a24e42a7513dbc382dc8a, type: 3}
+  - {fileID: 21300000, guid: aaa43127ab30f0f4483cd5a9226ada1f, type: 3}
+  - {fileID: 21300000, guid: e3a9801f112b7814c956ade6bfef36f9, type: 3}
+  - {fileID: 21300000, guid: 6952ce89db5949040b143eb1dd84d839, type: 3}
+  - {fileID: 21300000, guid: 97c626093a560f84ba4c842b67553cea, type: 3}
+  lesmoAndando:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: -5634879686137826938, guid: 531a892e04520da4cabce41d5de9be9b, type: 3}
+  - {fileID: 6751910822173760442, guid: 12fc1fe4e53676c46a2d72d0aca1b708, type: 3}
+  - {fileID: 4064883547482231588, guid: 504d1129adbcdd940911f88eb0388cfb, type: 3}
+  - {fileID: -5834972593163450151, guid: 576625ccc76e2da47ab2f3b8fc2c01cb, type: 3}
+  - {fileID: 9218270799110131622, guid: 8950f7f7c9dc8334da5e8a9e091cfeb7, type: 3}
+  - {fileID: 4915906415737351049, guid: 3a10ed6e8f11b5a4fb82d6fa48281d71, type: 3}
+  - {fileID: 8880555426632273215, guid: 2841f70543ac97f47b8e2458b512d88c, type: 3}
+  - {fileID: -4431839437452775403, guid: c05fed33a5ae1af47a9e9c7956cc5a7d, type: 3}
+  barrilRolando:
+  - {fileID: -1473187799316877132, guid: 8fb1ddbb06a6a5a48ba388aaed276422, type: 3}
+  - {fileID: -3202158069503184109, guid: e185cda1ffaad6d45bc4502f000c5f98, type: 3}
+  - {fileID: -1294815509648454750, guid: 7558c1af85b9bf04e88548a049929f04, type: 3}
+  - {fileID: 4610039672217448784, guid: cc4453abf9da8ba4b92c9fc9f3078d23, type: 3}
+  frutasImagens:
+  - nome: Avocado
+    parada:
+    - {fileID: 7792709276754923935, guid: a3bf0e245472447449632c54a4f44fb7, type: 3}
+    - {fileID: -6012292692799725789, guid: b97ce145d175b36408c258dbaa09549c, type: 3}
+    - {fileID: 9089459307237260304, guid: d0aea74836543f0498d85d349ec4a579, type: 3}
+    - {fileID: 4852710639400818481, guid: 701f08b568c113e448caf5b5ec01cfaf, type: 3}
+    - {fileID: -6967163144960063532, guid: 77befe077860e25478a73c6315240435, type: 3}
+    - {fileID: -8310465950490682585, guid: 7c79720a7e4ec524294e9443cc31f4e5, type: 3}
+    - {fileID: 8826390418983544146, guid: 918dd81b63676004c9aa2794f41afb01, type: 3}
+    explodindo:
+    - {fileID: 5164839759693005143, guid: d5878e2f4d1e0ae48b90ad231af2997e, type: 3}
+    - {fileID: 233546146942847129, guid: 8b8b8b78d90abbe499b5babdc3ee6ea8, type: 3}
+    - {fileID: -2373148729745042907, guid: 3a3d784be17953446859f03957574a0f, type: 3}
+    - {fileID: 2558073166456100471, guid: d10131201d29bd843a06a9f6b0667969, type: 3}
+    - {fileID: 2558073166456100471, guid: d10131201d29bd843a06a9f6b0667969, type: 3}
+    - {fileID: -8279352569956193500, guid: 0ddf08517647cf34a80e23eb20fc101f, type: 3}
+    - {fileID: 1496745366879920673, guid: b009a579065201e46adeae20755a1c19, type: 3}
+    - {fileID: 6061582753922845611, guid: bb7b33938cdaef34f97c4c4dc53f19a1, type: 3}
+  - nome: Banana
+    parada:
+    - {fileID: 6754139383442480329, guid: 506a87a9b597662409fa620d1807b155, type: 3}
+    - {fileID: 2895949701208990313, guid: d2f3b197a39ad1e4aa673f0eaf396a64, type: 3}
+    - {fileID: -1058308690947465962, guid: 3c7c469453d22204da5d45aa74416c61, type: 3}
+    - {fileID: 2539620123866743397, guid: dbc7d913311fd864384eea052f22f562, type: 3}
+    - {fileID: -6328438050667409579, guid: c40c0dc1cedfd974eb102a596f1f86ac, type: 3}
+    - {fileID: -3434088735132960112, guid: 0a625a0827b099d4b9032276d7de9494, type: 3}
+    - {fileID: -8651512432705514877, guid: c482bc82e04392f4489bafc7d036186e, type: 3}
+    explodindo:
+    - {fileID: 2815961610436049879, guid: facd9bf96dde5b4498a5a1f0af99bd9f, type: 3}
+    - {fileID: 4533848586394894055, guid: f7fe0a5ea25b5374da8799c8852cd19b, type: 3}
+    - {fileID: 7771036620668601231, guid: db3b8fa2aa8b1ed478262f32763a267e, type: 3}
+    - {fileID: 356668097588520728, guid: 087efa008af48534d9f9fdd3ffa4ba0d, type: 3}
+    - {fileID: -5895371856542286655, guid: 6a3bc709b7e92844ba6980326d48cc9c, type: 3}
+    - {fileID: 6620870231298881792, guid: d4faab46ccc9fb8408537ed37c1a4313, type: 3}
+    - {fileID: 7159581854125263239, guid: 070ecff0a73d72344a5bb89f80cfb338, type: 3}
+  - nome: Lemon
+    parada:
+    - {fileID: -6804644263424604615, guid: 563e5c156eace764eb8167d7132b579e, type: 3}
+    - {fileID: -3408019594145051917, guid: 804ea5ca6814cd04c8ebc058199c5c3c, type: 3}
+    - {fileID: -5144044847825959515, guid: c3b929cd4e285da479e4e7e6aa78e2c1, type: 3}
+    - {fileID: -8889359606387548782, guid: 3c80bd1ad1c27a94892bf3526deeb3fe, type: 3}
+    - {fileID: 7375260255246362710, guid: b044b817e33e6a04ba405b27916a388d, type: 3}
+    - {fileID: 4102747238748234650, guid: 6b3da82a51fa27a49890679a19846a3e, type: 3}
+    - {fileID: -1752243031884801607, guid: d5b193caf963d5e40971e12fd91d2637, type: 3}
+    explodindo:
+    - {fileID: -7187255126779991581, guid: afb50f55aef8eb649aeeeece13c2c83c, type: 3}
+    - {fileID: 7980122754686331018, guid: 9650cbf2946188d449c67ae577f363af, type: 3}
+    - {fileID: -3646588209518739262, guid: 2c20107093e6a424f8122505aeacd96d, type: 3}
+    - {fileID: -3376603232009081268, guid: ebd19ae61b5bb954d836d1898360d37e, type: 3}
+    - {fileID: -5073847641301705363, guid: 873158917e7ba5449b471feb56497441, type: 3}
+    - {fileID: -2617926951778376190, guid: d080ada0206823a4cbea4c9b43ee091b, type: 3}
+    - {fileID: 7238365106845428398, guid: 48305306fe88a4d4093fdc89083a54fd, type: 3}
+  - nome: Orange
+    parada:
+    - {fileID: -761692971551999683, guid: c6c7f1d8f20eeb94986708f031f93e76, type: 3}
+    - {fileID: -3113053499745919911, guid: a1e5483079f8fda4387d3160a25cae2b, type: 3}
+    - {fileID: -4206903517327017746, guid: a61caf5e7798e0e4080e116059971339, type: 3}
+    - {fileID: -7947408040484303917, guid: 31cde97b699412748b54c10c0ba5369d, type: 3}
+    - {fileID: 144410063451702784, guid: 1f71bf5456e74ae46af8febde0da0500, type: 3}
+    - {fileID: 5149369503862969301, guid: 22115455e10a1a746bc72cdc5609edef, type: 3}
+    - {fileID: -1547733559017336919, guid: b52c12e58bfa910459877505ee3f3582, type: 3}
+    explodindo:
+    - {fileID: -239634592415868610, guid: 43fef77487694b04898c9306cc72b67e, type: 3}
+    - {fileID: -3301209702104090060, guid: 68e6b4c21de735242af09f72af67f507, type: 3}
+    - {fileID: 8842692980279272028, guid: c805e66fab013764a953de7997a7a51e, type: 3}
+    - {fileID: 6606692548438679028, guid: 9df1590aed533624c86f9206db742047, type: 3}
+    - {fileID: 59109796489254876, guid: dc0ca913c53fbe044a6055f9aef8b620, type: 3}
+    - {fileID: 8157927848893392893, guid: bae3b197bae514f48a9638389613f8ae, type: 3}
+    - {fileID: 663775677449825689, guid: febf81a88cfebea4f95ff1e8e2eebd3c, type: 3}
+  - nome: Pear
+    parada:
+    - {fileID: -582309763531186974, guid: f565669460a2c824d910d285a79190f6, type: 3}
+    - {fileID: -5903242617755407868, guid: 849b2946dcefbc8468e8e50a38a5b843, type: 3}
+    - {fileID: -6332098783562604135, guid: d59a3df8848f5914a97ea1d1f7a758d3, type: 3}
+    - {fileID: -6540587595502292887, guid: 3b7b76e22e8875840bada9da0d2fa59a, type: 3}
+    - {fileID: -1459630659095722039, guid: 43243939ecac9c34f8b6692a6a36dad0, type: 3}
+    - {fileID: 918009507966965504, guid: 379ba7e2b35a6694ab2f2056b1b47a92, type: 3}
+    - {fileID: 7596884816107351142, guid: 06165cfe5858b30428eab59f9d286c59, type: 3}
+    explodindo:
+    - {fileID: -2033602416179377920, guid: 96fed8d070524ea498b5bc40ba3bb89c, type: 3}
+    - {fileID: 1084249396958354236, guid: 8546302d0c4014f41a97aa217f5beaa2, type: 3}
+    - {fileID: -6723999969534732774, guid: a641c91681b7a974390c945b4df5a960, type: 3}
+    - {fileID: 9074030462115463239, guid: 09c191c6dc78d484f87da515ed62b3fd, type: 3}
+    - {fileID: 8912801914204610443, guid: 40c840a2415bef149b1374551d586912, type: 3}
+    - {fileID: 4375042118215030030, guid: f26e501951cfcac49b0bef023f6a39b2, type: 3}
+    - {fileID: -2967872842199407289, guid: db9d86f0e087e954d8cc030e1ab4ef07, type: 3}
+  - nome: PineApple
+    parada:
+    - {fileID: 542818960489943259, guid: 8d7e08f5f39e8ce43aeb6495cbcfec0e, type: 3}
+    - {fileID: 8932695015709887981, guid: ff531294e2a318e439f09173b898905c, type: 3}
+    - {fileID: -5151717093389719008, guid: eda5aca2e4e2c0f4583a58def2cec2a8, type: 3}
+    - {fileID: 5201202757568779648, guid: 7c631f6cbbf4ebd449271f7a6668cdbc, type: 3}
+    - {fileID: -4659183389771643009, guid: f07cefbae2d3ea946b48b25a5ce6fb38, type: 3}
+    - {fileID: -7743964064379331108, guid: 378e4e236b305174f863c39ea2082193, type: 3}
+    - {fileID: -8722765551514230230, guid: c7e647044fa0b9b4dbccffb478cb1502, type: 3}
+    explodindo:
+    - {fileID: 817748823376254976, guid: 95288bdc6b84aca4d9cf0e03881f7f89, type: 3}
+    - {fileID: 7887185607613652125, guid: 2f85253230a2ceb42b156d9f83c65898, type: 3}
+    - {fileID: 2204927653166593999, guid: 20bcb506e30621a4291363d0551e82c4, type: 3}
+    - {fileID: -3590370925599125663, guid: ed7d45cc2cf5a094b8f381c10afa9750, type: 3}
+    - {fileID: -8230190802084628744, guid: a59bb213b63370841b532a46bffe7abd, type: 3}
+    - {fileID: -8309909860221555636, guid: e6cacc85d3d3b1541a5e8d8259cbefe3, type: 3}
+    - {fileID: -8074502968430048375, guid: e78548656ad6d504096d30e492627272, type: 3}
+    - {fileID: -5661260910056920832, guid: 5de13d21e24245346bf1bb589c400d59, type: 3}
+    - {fileID: 3766798386832476085, guid: 329c90954e032ac4eb6a73618fc5b004, type: 3}
+  - nome: Tomato
+    parada:
+    - {fileID: -822621731617106633, guid: 72f0d7aa1bc40974f946d8f816a12e5f, type: 3}
+    - {fileID: 8008023742608626108, guid: 531fffb708b125445b3018f6b170a51a, type: 3}
+    - {fileID: -6501534463084006317, guid: 5dab50be4e9f96941be7729c3c4081fe, type: 3}
+    - {fileID: 6257107702229224484, guid: 2c25ac663e737d246b98edb4ecf06a0b, type: 3}
+    - {fileID: 1014525533266131816, guid: 167537b654e7b634184e688760c6632f, type: 3}
+    - {fileID: -4443191421655932683, guid: f7135a5a0bdc16b48bc31bfd5606d74e, type: 3}
+    - {fileID: -4896687471610944581, guid: bcf282c32e423574fad2394979c7c821, type: 3}
+    explodindo:
+    - {fileID: 6095846289506625990, guid: 9566ac99f5a675144a582f09f49fa5e5, type: 3}
+    - {fileID: 1216433854291380028, guid: 3f620c6d61ad47243a865a3b9b70c97d, type: 3}
+    - {fileID: -4948254933917350784, guid: a12d0b8b181962a4ca4af18443fca59d, type: 3}
+    - {fileID: 7376431699604095457, guid: 98e1ff9495ed26c4582cd7a6b22a4ed5, type: 3}
+    - {fileID: -1871289836268994811, guid: cc91d7419be755a42a5dc416cff8ea45, type: 3}
+    - {fileID: -5675593664592947925, guid: 9ebfc8ceee28c33428d414edce715003, type: 3}
+    - {fileID: -8843052281913337851, guid: 6ba59ba43743b244f9af24beb265a4ac, type: 3}
+  imagemTiro: {fileID: 0}
+--- !u!4 &883698568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883698566}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 519420032}
+  - {fileID: 619394802}
+  - {fileID: 883698568}
